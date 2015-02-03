@@ -1,0 +1,346 @@
+/*
+ * Globals
+ */
+
+body {
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #555;
+  font-weight: 300;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+h2{
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial sans-serif;
+    font-size: 21px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #555
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+.navbar-default .navbar-brand {
+    color: #555;
+}
+
+.navbar-brand{
+  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.9em;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+/* Nav bar */
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+  background-color: #f8f8f8;
+}
+
+.navbar-default .navbar-nav>li>a{
+  font-weight: 700;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li.active>a{
+  border-bottom: 3px solid;
+  padding-bottom: 12px;
+}
+
+/*Pseudo Child Elements*/
+/*Setting different colors for each list item*/
+.navbar-default .navbar-nav>li:first-child>a, .navbar-default .navbar-nav>li:first-child>a:hover, .navbar-default .navbar-nav>li:first-child>a:focus {
+  color: #e74c3c;
+}
+
+.navbar-default .navbar-nav>li:nth-child(2)>a, .navbar-default .navbar-nav>li:nth-child(2)>a:hover, .navbar-default .navbar-nav>li:nth-child(2)>a:focus{
+  color: #2ecc71;
+}
+
+.navbar-default .navbar-nav>li:nth-child(3)>a, .navbar-default .navbar-nav>li:nth-child(3)>a:hover, .navbar-default .navbar-nav>li:nth-child(3)>a:focus {
+  color: #2980b9;
+}
+
+.navbar-default .navbar-nav>li:nth-child(4)>a, .navbar-default .navbar-nav>li:nth-child(4)>a:hover, .navbar-default .navbar-nav>li:nth-child(4)>a:focus {
+  color: #d35400;
+}
+
+/*Blog page*/
+#blog-page{
+  padding-top: 30px;
+}
+
+/*Pseudo Child Element*/
+/*Setting different colors for each blog post title*/
+
+/*
+#blog-page .blog-post:first-child h2.blog-post-title{
+  color: #e74c3c;
+}
+
+#blog-page .blog-post:nth-child(2) h2.blog-post-title{
+  color: #2ecc71;
+}
+
+#blog-page .blog-post:nth-child(3) h2.blog-post-title{
+  color: #2980b9;
+}
+*/
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+
+#subscribe-box{
+  padding: 15px 20px;
+}
+#subscribe-box h4{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  color: #555;
+  text-align: justify;
+}
+
+#subscribe-box p{
+  line-height: 1.8em;
+  text-rendering: optimizelegibility;
+  font-size: 15px;
+}
+
+#subscribe-box .form-group{
+  margin-top: 15px;
+}
+
+#subscribe-box .btn-warning{
+  color: #FFF;
+  background-color: #F39C12;
+  border-color: #EEA236;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#subscribe-box .btn-warning:hover{
+  background-color: #F0AD4E;
+}
+
+#posts-box{
+  padding: 0px;
+  border: 3px solid #efefef;
+  border-top: 0;
+  border-radius: 3px;
+  margin-top: 30px;
+}
+
+#posts-box a{
+  color: #555;
+}
+
+#posts-box ol{
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+#posts-box li{
+  font-size: 16px;
+  padding: 12px;
+  border-bottom: 3px solid #efefef;
+  min-height: 60px;
+  line-height: 20px;
+}
+
+#posts-box li:last-child{
+  border-bottom: 0;
+}
+
+#posts-box h4{
+  font-size: 16px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  color: #555;
+  background-color: #efefef;
+  padding: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0px;
+}
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+
+.blog-sidebar{
+  padding-left: 30px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  border: 5px dashed #e74c3c;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+/*Blog Post Page*/
+#share-buttons img {
+  width: 55px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;
+  vertical-align: top;
+  margin-bottom: 0;
+}
+
+#share-buttons p{
+  font-size: 40px;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+/*CSS for image for each blog post*/
+
+.blog-main img{
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #888;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.blog-post-meta a.btn-danger{
+  background-color: #e74c3c;
+  padding: 3px 5px;
+  margin-right: 5px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.blog-post-meta a.btn-danger:hover{
+  background-color: #D2322D;
+}
+
+
+
+.blog-post-title{
+  margin-bottom: 5px;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.blog-post-title a{
+  color: #555;
+}
+
+.blog-post-title a:hover{
+  color: #23527c;
+}
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+
+/*Site-wide styling*/
+.center{
+  text-align: center;
+}
+
+
+/*Responsive Styling*/
+@media (max-width: 991px) {
+
+  #subscribe-box h4{
+    text-align: center;
+  }
+}
