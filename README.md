@@ -6,3 +6,5 @@ Developed a fictitious Responsive Single-Page website using Bootstrap3 framework
 
 #MovieBuff App Landing Page using Bootstrap
 ![alt tag](https://github.com/apatil88/Web-Projects/blob/master/Bootstrap-Project-AppLandingPage/images/App-Landing-Page-Screenshot1.png)
+:width: 250px
+:height: 250px
